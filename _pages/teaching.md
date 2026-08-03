@@ -11,4 +11,6 @@ nav_order: 6
 
 Organize your courses by years, topics, or universities, however you like! -->
 
-To be filled.
+## Teaching Assistant
+
+- **Introduction to Quantum Computation and Information** — Spring 2023
