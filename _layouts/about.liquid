@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 
@@ -53,13 +52,15 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
-    <!-- Latest posts
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %} -->
+    <!--
+      Latest posts
+      {% if site.latest_posts.enabled %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      {% endif %}
+    -->
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
@@ -74,6 +75,36 @@ layout: default
       <div class="social">
         <div class="contact-icons">{% include social.liquid %}</div>
 
+        <div id="visitor-globe-small" style="width: 100px; height: 110px; margin: 0 auto; overflow: hidden">
+          <script
+            type="text/javascript"
+            id="mmvst_globe"
+            src="https://mapmyvisitors.com/globe.js?d=dzIEeI1byVCsA6WDW1AG5Kj_UQHXvzw6RiMoiBbjVGI"
+          ></script>
+        </div>
+        <script>
+          (() => {
+            const container = document.getElementById('visitor-globe-small');
+            const compactGlobe = () => {
+              const globe = container?.querySelector('.mmvst_outer');
+              if (!globe) return;
+
+              const width = Number.parseFloat(globe.style.width) || globe.offsetWidth;
+              if (!width) return;
+
+              const scale = Math.min(1, 100 / width);
+              globe.style.transform = `scale(${scale})`;
+              globe.style.transformOrigin = 'top left';
+            };
+
+            new MutationObserver(compactGlobe).observe(container, {
+              childList: true,
+              subtree: true,
+            });
+            compactGlobe();
+          })();
+        </script>
+
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
@@ -83,4 +114,3 @@ layout: default
     {% endif %}
   </article>
 </div>
-

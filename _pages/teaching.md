@@ -1,15 +1,22 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: A list of courses that I am TAing / TA'ed.
+title: "teaching & mentoring"
+description: Teaching, tutoring, and mentoring experience.
 nav: true
 nav_order: 6
 ---
 
-<!-- For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Hackathon Coaching
 
-Organize your courses by years, topics, or universities, however you like! -->
+- **Qiskit Hackathon Taiwan 2026** — Coach
+  - Coached two teams; both received the Enterprise Special Prize.
+- **Qiskit Hackathon Taiwan 2025** — Coach
+
+## Tutoring
+
+- **General Physics** — Tutor, Spring 2024
+- **Calculus** — Tutor, Spring 2024
 
 ## Teaching Assistant
 

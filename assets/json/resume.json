@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Damien Jian",
-    "label": "Scientist, Computer Scientist",
+    "label": "Scientist, Physicist",
     "image": "",
     "email": "f10245023@ntu.edu.tw",
     "phone": "",
@@ -134,6 +134,22 @@
     //   "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     // }
   ],
+  "posters": [
+    {
+      "name": "Benchmarking Epsilon-Greedy Decay Schedules in Variational Quantum Reinforcement Learning",
+      "event": "Joint Symposium on Quantum Computing",
+      "organizers": "National Taiwan University, Yonsei University, and Keio University",
+      "location": "Korea",
+      "date": "2026"
+    },
+    {
+      "name": "Test-Time Training with Quantum Autoencoders: Addressing Distribution Shifts and Noise in Quantum Circuits",
+      "event": "Joint Symposium on Quantum Computing",
+      "organizers": "Keio University, Yonsei University, and National Taiwan University",
+      "location": "Japan",
+      "date": "2025"
+    }
+  ],
   "skills": [
     // {
     //   "name": "Physics",
@@ -165,22 +181,12 @@
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Communication"
-      ]
+      "keywords": ["Quantum Computing", "Quantum Information", "Quantum Communication"]
     },
     {
       "name": "Computer Science",
       "icon": "fa-solid fa-laptop",
-      "keywords": [
-        "Artificial Intelligence",
-        "Reinforcement Learning",
-        "Deep Learning",
-        "Diffusion Models",
-        "Mamba"
-      ]
+      "keywords": ["Artificial Intelligence", "Reinforcement Learning", "Deep Learning", "Diffusion Models", "Mamba"]
     }
   ],
   "references": [

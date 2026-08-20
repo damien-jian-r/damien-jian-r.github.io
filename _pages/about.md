@@ -19,13 +19,14 @@ profile:
         <a href="f10245023@ntu.edu.tw" style="text-decoration: none;">
             f10245023@ntu.edu.tw
         </a>
+        <!--
         <a href="damien.jian.research@gmail.com" style="text-decoration: none;">
             damien.jian.research@gmail.com
         </a>
+        -->
     </p>
-
 news: false # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
+latest_posts: false # includes a list of the newest posts
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
@@ -43,6 +44,8 @@ I am interested in quantum machine learning, including but not limited to model 
 I'm working on customizing these pages right now. It will soon looks better.
 
 > <span style="font-family: 'Libre Baskerville', serif; font-size: 28px;">"Do not go gentle into that good night."</span><br />
+>
 > <footer style="font-size: 18px;">
+
         — From the movie <cite style="font-style: italic;">Interstellar</cite>
     </footer>
