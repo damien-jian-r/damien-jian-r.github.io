@@ -83,19 +83,19 @@ layout: default
           ></script>
         </div>
         <script>
-          (() => {
-            const container = document.getElementById('visitor-globe-small');
-            const compactGlobe = () => {
-              const globe = container?.querySelector('.mmvst_outer');
+          (function () {
+            var container = document.getElementById('visitor-globe-small');
+            function compactGlobe() {
+              var globe = container && container.querySelector('.mmvst_outer');
               if (!globe) return;
 
-              const width = Number.parseFloat(globe.style.width) || globe.offsetWidth;
+              var width = parseFloat(globe.style.width) || globe.offsetWidth;
               if (!width) return;
 
-              const scale = Math.min(1, 100 / width);
-              globe.style.transform = `scale(${scale})`;
+              var scale = Math.min(1, 100 / width);
+              globe.style.transform = 'scale(' + scale + ')';
               globe.style.transformOrigin = 'top left';
-            };
+            }
 
             new MutationObserver(compactGlobe).observe(container, {
               childList: true,
