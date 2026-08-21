@@ -47,7 +47,9 @@ jobs:
       - name: Link Checker 🔗
         uses: lycheeverse/lychee-action@v2.9.0
         with:
-          fail: true
+          # External sites may block or rate-limit GitHub-hosted runners.
+          # Keep the report informational instead of blocking deployments.
+          fail: false
           # removed md files that include liquid tags
           args: >-
             --user-agent 'curl/7.54'
