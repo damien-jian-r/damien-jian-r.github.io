@@ -51,6 +51,7 @@ jobs:
           # removed md files that include liquid tags
           args: >-
             --user-agent 'curl/7.54'
+            --accept '100..=103,200..=299,403,429'
             --exclude-path README.md
             --exclude-path CUSTOMIZE.md
             --exclude-path FAQ.md
